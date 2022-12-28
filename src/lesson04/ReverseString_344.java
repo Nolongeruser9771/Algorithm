@@ -17,7 +17,7 @@ public class ReverseString_344 {
         return s;
     }
 
-    //    Sử dụng vòng lặp
+    // Sử dụng vòng lặp
     public static char[] reverseString2(char[] s) {
         int middle = s.length/2-1;
         for (int i = 0; i <= middle; i++) {
@@ -27,5 +27,4 @@ public class ReverseString_344 {
         }
         return s;
     }
-
 }
