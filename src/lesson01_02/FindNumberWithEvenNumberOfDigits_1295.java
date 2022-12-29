@@ -1,4 +1,4 @@
-package lesson02;
+package lesson01_02;
 
 public class FindNumberWithEvenNumberOfDigits_1295 {
     public static void main(String[] args) {

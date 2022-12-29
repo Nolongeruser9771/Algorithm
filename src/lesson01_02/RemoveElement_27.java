@@ -1,6 +1,4 @@
-package lesson02;
-
-import java.util.Arrays;
+package lesson01_02;
 
 public class RemoveElement_27 {
     public static void main(String[] args) {
