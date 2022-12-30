@@ -1,8 +1,5 @@
 package lesson05;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class IntersectionOfTwoArrays_349 {
     public static void main(String[] args) {
         int[] nums1 = {4,9,5};
