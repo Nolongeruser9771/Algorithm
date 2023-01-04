@@ -35,8 +35,8 @@ public class QuickSort_Implement {
         while (i<=j) {
             //Với start -> tìm phần từ lớn hơn để đổi chỗ
             //Với end -> Tìm phần tử nhỏ hơn để đổi chỗ
-            while (nums[i]<key) i++;
-            while (nums[j]>key) j--;
+            if (nums[i]<key) i++;
+            if (nums[j]>key) j--;
 
             //Đổi chỗ 2 phần tử đứng không đúng vị trí
             if (i<=j) {

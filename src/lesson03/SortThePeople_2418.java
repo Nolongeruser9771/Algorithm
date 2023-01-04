@@ -37,37 +37,23 @@ public class SortThePeople_2418 {
 
     //C2: Dùng quicksort
     public static String[] sortPeople2(String[] names, int[] heights) {
-        // for(int i=0;i<names.length-1;i++){
-        //     for(int j=0;j<names.length-i-1;j++){
-        //         if(heights[j+1]>heights[j]){
-        //             int tempHeight = heights[j];
-        //             heights[j] = heights[j+1];
-        //             heights[j+1] = tempHeight;
-
-        //             String tempName= names[j];
-        //             names[j] = names[j+1];
-        //             names[j+1] = tempName;
-        //         }
-        //     }
-        // }
-        // return names;
         quickSort(heights, names, 0, heights.length - 1);
         return names;
     }
 
-    public static void quickSort(int[] heights, String[] names, int left, int right) {
-        if (left < right) {
-            int pivot = partition(heights, names, left, right);
-            quickSort(heights, names, left, pivot - 1);
-            quickSort(heights, names, pivot + 1, right);
+    public static void quickSort(int[] heights, String[] names, int left, int right){
+        if(left< right){
+            int pivot= partition(heights, names, left, right);
+            quickSort(heights, names, left, pivot-1);
+            quickSort(heights, names, pivot+1, right);
         }
     }
 
-    public static int partition(int[] heights, String[] names, int left, int right) {
-        int i = left - 1;
-        int pivot = right;
-        for (int j = left; j <= right; j++) {
-            if (heights[j] >= heights[pivot]) {
+    public static int partition(int[] heights, String[] names, int left, int right){
+        int i = left-1;
+        int pivot = right; //chọn khoá là phần tử cuối cùng
+        for(int j = left;j<=right;j++){
+            if(heights[j] >= heights[pivot]){
                 i++;
                 int temp = heights[i];
                 heights[i] = heights[j];

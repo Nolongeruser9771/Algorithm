@@ -9,13 +9,24 @@ public class SortArrayByParity_905 {
     }
 
     public static int[] sortArrayByParity(int[] nums) {
-        int n = nums.length;
-        int[] result = new int[n];
+        int i = 0; //cận trái
+        int j = nums.length-1; // cận phải
 
-        if (n == 1) return nums;
-        for (int i = 0; i < n; i++) {
+        //set cận trái, phải -> kiểm tra even ở bên trái, odd ở bên phải
+        //nếu có giá trị không đúng vị trí thì đổi chỗ
+        while (i<j) {
+            if (nums[i]%2!=0 && nums[j]%2 ==0) {
+                //Đổi chỗ
+                int tempt = nums[i];
+                nums[i] = nums[j];
+                nums[j] = tempt;
 
+                i++;
+                j--;
+            }
+            if (nums[i]%2==0) i++;
+            if (nums[j]%2!=0) j--;
         }
-        return result;
+        return nums;
     }
 }
