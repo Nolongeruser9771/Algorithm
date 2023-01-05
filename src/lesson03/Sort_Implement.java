@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Sort_Implement {
     public static void main(String[] args) {
-        int[] nums = {1,5,3,9,6,7,12,34,1,100,2};
-//        System.out.println(Arrays.toString(bubbleSort(nums)));
+        int[] nums = {2,0,2,1,1,0};
+        System.out.println(Arrays.toString(bubbleSort(nums)));
 //        System.out.println(Arrays.toString(insertionSort(nums)));
-        System.out.println(Arrays.toString(selectionSort(nums)));
+//        System.out.println(Arrays.toString(selectionSort(nums)));
 
     }
 
