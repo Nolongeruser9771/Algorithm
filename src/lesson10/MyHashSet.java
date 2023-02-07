@@ -2,7 +2,7 @@ package lesson10;
 
 import java.util.ArrayList;
 
-public class MyHashSet {
+public class MyHashSet { //leetcode_705
     //HashSet: quản lí 1 tập key (chỉ cần quản lí Key: kiểm tra phần tử tồn tại không)
     //HashMap: quản lí 1 cặp key - value (quản lí thông tin dựa trên khóa - key, đếm số lượng xuất hiện của phần tử)
     
