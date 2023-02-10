@@ -1,12 +1,12 @@
-package lesson12;
+package final_test;
 
 public class NumbersOfIsland_200 {
     //Ý tưởng: Duyệt mảng, khi gặp phần tử == 1, duyệt 4 phía xung quanh (chạy DFS) --> count++ (1 cụm số 1 tạo thành 1 đảo)
     static char[][] grid = {{'1','1','1','1','0'},
-            {'1','1','0','1','0'},
-            {'1','1','0','0','0'},
-            {'0','0','0','0','0'},
-            {'0','0','1','0','0'}};
+                            {'1','1','0','1','0'},
+                            {'1','1','0','0','0'},
+                            {'0','0','0','0','0'},
+                            {'0','0','1','0','0'}};
 
     public static void main(String[] args) {
         System.out.println(numIslands(grid));
