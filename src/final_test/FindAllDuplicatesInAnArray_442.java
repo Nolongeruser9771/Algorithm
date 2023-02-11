@@ -31,4 +31,20 @@ public class FindAllDuplicatesInAnArray_442 {
         }
         return duplicateList;
     }
+
+    //Ý tưởng 2: Dùng mảng convert to freq[] với index = nums[i]
+    public static List<Integer> findDuplicates2(int[] nums) {
+        if (nums.length<=1) return new ArrayList<>();
+
+        int[] freq = new int[100000]; //constrain: 1 <= n <= 105
+        for (int i:nums) {
+            freq[i]++;
+        }
+
+        List<Integer> duplicateList  = new ArrayList<>();
+        for (int i = 0; i < freq.length; i++) {
+            if (freq[i]==2) duplicateList.add(i);
+        }
+        return duplicateList;
+    }
 }
